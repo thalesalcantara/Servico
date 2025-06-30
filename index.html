@@ -33,7 +33,7 @@
       <input type="tel" id="telefoneRecebedor" />
 
       <label>Tipo de serviço:</label>
-      <div class="linha">
+      <div class="linha caixinhas">
         <label><input type="checkbox" value="Coleta/Entrega" /> Coleta/Entrega</label>
         <label><input type="checkbox" value="Cartório" /> Cartório</label>
         <label><input type="checkbox" value="Correios" /> Correios</label>
@@ -43,22 +43,22 @@
       <input type="text" id="outrosDescricao" placeholder="Descreva se marcou 'Outros'" />
 
       <label>Forma de pagamento:</label>
-      <div class="linha">
+      <div class="linha caixinhas">
         <label><input type="checkbox" value="Pix" onchange="mostrarOpcoesPagamento()" /> Pix</label>
         <label><input type="checkbox" value="Dinheiro" onchange="mostrarOpcoesPagamento()" /> Dinheiro</label>
         <label><input type="checkbox" value="Contrato" onchange="mostrarOpcoesPagamento()" /> Contrato</label>
       </div>
 
-      <p id="mensagemPix" class="mensagem-pagamento" style="display: none;">
+      <p id="mensagemPix" style="display: none; color: green;">
         Após o envio do comprovante, o pedido será concluído e encaminharemos o motoboy assim que possível.
       </p>
 
-      <div id="opcoesDinheiro" class="linha" style="display: none;">
+      <div id="opcoesDinheiro" class="linha caixinhas" style="display: none;">
         <label><input type="radio" name="receberDinheiro" value="coleta" /> Receber na coleta</label>
         <label><input type="radio" name="receberDinheiro" value="entrega" /> Receber na entrega</label>
       </div>
 
-      <div class="linha">
+      <div class="linha caixinhas">
         <label><input type="checkbox" id="temRetorno" /> Tem retorno de entrega</label>
         <label><input type="radio" name="acao" value="Solicitar Motoboy" checked /> Solicitar Motoboy</label>
         <label><input type="radio" name="acao" value="Orçamento" /> Apenas Orçamento</label>
@@ -70,3 +70,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+

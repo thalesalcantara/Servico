@@ -1,4 +1,3 @@
-
 let totalColetas = 0;
 let totalEntregas = 0;
 let totalParadas = 0;
@@ -8,7 +7,7 @@ function criarBlocoEndereco(tipo, index) {
     <div class="bloco-endereco">
       <label>CEP (opcional):</label>
       <input type="text" id="cep${tipo}${index}" />
-      <button type="button" onclick="buscarEndereco('${tipo}', ${index})">Buscar Endereço</button>
+      <button type="button" onclick="buscarEndereco('${tipo}', ${index})")">Buscar Endereço</button>
       <label>Rua:</label>
       <input type="text" id="rua${tipo}${index}" />
       <label>Número:</label>
@@ -56,13 +55,13 @@ function buscarEndereco(tipo, index) {
 }
 
 function mostrarOpcoesPagamento() {
-  const pixChecked = document.querySelector('input[value="Pix"]').checked;
-  const dinheiroChecked = document.querySelector('input[value="Dinheiro"]').checked;
-
-  document.getElementById("mensagemPix").style.display = pixChecked ? "block" : "none";
-  document.getElementById("opcoesDinheiro").style.display = dinheiroChecked ? "flex" : "none";
+  const pix = document.querySelector('input[value="Pix"]');
+  const dinheiro = document.querySelector('input[value="Dinheiro"]');
+  document.getElementById("mensagemPix").style.display = pix && pix.checked ? "block" : "none";
+  document.getElementById("opcoesDinheiro").style.display = dinheiro && dinheiro.checked ? "flex" : "none";
 }
 
 function enviarParaWhatsApp() {
-  alert("Redirecionando para o WhatsApp com os dados do formulário.");
+  alert("Redirecionar para o WhatsApp com os dados preenchidos...");
 }
+

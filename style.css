@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -32,12 +31,13 @@ button:hover {
   margin-bottom: 10px;
   border-radius: 6px;
 }
-.linha {
+.linha.caixinhas {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.linha label {
-  flex: 1;
+.linha.caixinhas label {
+  flex: 1 1 45%;
   white-space: nowrap;
 }
+
